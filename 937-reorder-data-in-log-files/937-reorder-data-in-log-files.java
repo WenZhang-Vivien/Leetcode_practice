@@ -6,8 +6,8 @@ class Solution {
         String[] newLogs = new String[logs.length];
         for (String log: logs){
             String firstStr = log.split(" ",2)[1];
-            if (Character.isDigit(firstStr.charAt(0))){
-            // if (firstStr.charAt(0)>= '0' && firstStr.charAt(0)<= '9'){
+            // if (Character.isDigit(firstStr.charAt(0))){
+            if (firstStr.charAt(0)>= '0' && firstStr.charAt(0)<= '9'){
                 digList.add(log);
             } else {
                 letterList.add(log);
